@@ -15,6 +15,9 @@ app.use((req, resp, done)=> {
     done();
 });
 
+// Creo el enrutado principal.
+app.use(require('./rutas'));
+
 /* En caso de que se hagan peticiones sin destino en el servidor, retorna un 404
 con el sieguiente texto */
 app.use(function(req, resp, done) {
