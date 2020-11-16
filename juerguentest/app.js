@@ -16,11 +16,6 @@ app.use((req, resp, done)=> {
     done();
 });
 
-
-app.get('/test',(req, resp, done)=> {
-    resp.status(200).json({ info: 'todo genial?'});
-});
-
 app.use(function(req, resp, done) {
     const err = new Error("Aparentemente, la ruta no fué encontrada");
     err.status = 404;
