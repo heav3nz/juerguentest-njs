@@ -4,7 +4,7 @@ const express = require('express'),
 
 const app = express();
 app.use(morgan('dev'));
-
+app.use(bodyParser.json({limit: '10mb', extended: true}))
 // permito cualquier acceso a mis endpoints por cuestiones de prueba.
 app.use((req, resp, done)=> {
     req.header('Access-control-Allow-Origin', '*');

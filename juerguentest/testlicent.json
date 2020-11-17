@@ -1,0 +1,12 @@
+{
+    "user": "sysadmin",
+    "password": "sopazaNic4",
+    "server": "plur4l-server.database.windows.net",
+    "driver": "tedious",
+    "database": "plur4l",
+    "port": 1433, 
+    "options": {
+        "encrypt": true,
+        "enableArithabort": false
+    }
+}
